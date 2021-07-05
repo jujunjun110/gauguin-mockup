@@ -1,10 +1,84 @@
-$p_color: green;
-$p_bg_color: yellow;
- 
-p {
-  color: $p_color;
-  background-color: $p_bg_color;
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+$blue01: #369ff0;
+$blue02: #f0faff;
+$navy01: #314351;
+$placeholder: #ccc;
+$content-width: 1364px;
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $navy01;
 }
+
 body {
-    background-color: white;
+  background-color: white;
+  font-family: "Noto Sans Japanese", sans-serif;
+}
+header {
+  background-color: white;
+  height: 80px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+
+  .container {
+    width: $content-width;
+    margin: auto;
+    height: 100%;
+    padding: 0;
+
+    #logo {
+      background-color: $placeholder;
+      float: left;
+      width: 40%;
+      height: 100%;
+    }
+
+    ul {
+      float: left;
+      width: 60%;
+      height: 80px;
+      li {
+        display: block;
+        height: 100%;
+        line-height: 80px;
+        float: left;
+        font-weight: bold;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+article {
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+.container {
+  width: $content-width;
+  margin: auto;
+  padding: 32px 0;
+
+  h1 {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 36px;
+  }
+  p.subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 0;
+  }
+  p.description {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+#about {
+  background-color: $blue02;
 }
