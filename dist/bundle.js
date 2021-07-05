@@ -1,1 +1,1 @@
-console.log(window.innerWidth);
+(()=>{"use strict";console.log(window.innerWidth)})();
