@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-cli serve --mode development --hot",
-    "start": "webpack-dev-server --mode development",
+    "build": "webpack",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
